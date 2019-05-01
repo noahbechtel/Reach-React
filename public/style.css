@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+@font-face {
+  font-family: 'ArchiveGaramondPro-BoldItalic';
+  src: url('/assets/fonts/ArchiveGaramondPro-BoldItalic/ArchiveGaramondPro-BoldItalic.eot');
+  src: 
+  url('/assets/fonts/ArchiveGaramondPro-BoldItalic/ArchiveGaramondPro-BoldItalic.woff') format('woff'),
+  url('/assets/fonts/ArchiveGaramondPro-BoldItalic/ArchiveGaramondPro-BoldItalic.ttf') format('opentype'),
+  url('/assets/fonts/ArchiveGaramondPro-BoldItalic/ArchiveGaramondPro-BoldItalic.svg') format('svg');
+  }
+@font-face {
+    font-family: 'ArchiveGaramondPro-Bold';
+    src: url('/assets/fonts/ArchiveGaramondPro-Bold/ArchiveGaramondPro-Bold.eot');
+    src: 
+    url('/assets/fonts/ArchiveGaramondPro-Bold/ArchiveGaramondPro-Bold.woff') format('woff'),
+    url('/assets/fonts/ArchiveGaramondPro-Bold/ArchiveGaramondPro-Bold.ttf') format('opentype'),
+    url('/assets/fonts/ArchiveGaramondPro-Bold/ArchiveGaramondPro-Bold.svg') format('svg');
+    }
+
 body {
   font-family: sans-serif;
+  margin: 0%;
+  height: 100%;
 }
 
 a {
@@ -10,12 +31,163 @@ label {
   display: block;
 }
 
-nav a {
-  display: inline-block;
-  margin: 1em;
-}
-
 form div {
   margin: 1em;
   display: inline-block;
+}
+.slideshow-mobile{
+  height :300px
+}
+.slide-container {
+  z-index: 10;
+  position: relative;
+  width: 70%;
+  margin: 0px; }
+
+h3 {
+  text-align: center; }
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: -webkit-fill-available;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+.indicators{
+  position: absolute;
+  top: 250px;
+  left: 0;
+  width: 100%;
+  
+}
+.indicators div{
+  width: 20px !important;
+  height:20px !important;
+}
+
+.slide-heading { 
+  z-index: 0;
+  position: absolute; 
+  text-align: center;
+  color: #fff;
+  top: 60px; 
+  left: 0; 
+  width: 100%; 
+  line-height: 20px;
+}
+.slide-heading p{
+  font-family: Montserrat;
+  font-size:26px;
+}
+.slide-heading h1{
+  font-family: ArchiveGaramondPro-BoldItalic;
+  font-size: 66px
+}
+
+
+.slide-footer{
+  font-family: Montserrat;
+  font-size:20px;
+  z-index: 0;
+  position: absolute; 
+  text-align: center;
+  color: #fff;
+  top: 650px; 
+  left: 0; 
+  width: 100%; 
+  line-height: 20px;
+}
+.icons .instructions{
+  overflow: hidden;
+  position: relative;
+  width:100%;
+  
+}
+.icons-mobile .instructions{
+  position: relative;
+  -webkit-clip-path: polygon(50% 11%, 38% 0, 61% 0);
+clip-path: polygon(50% 11%, 38% 0, 61% 0);
+  width: 0px
+  
+}
+.icons-mobile{
+  display:flex;
+  width: 411px;
+  background-image: '/assets/howToEnter/group-9@2x.png';
+}
+.icons-mobile .enter{
+  font-family: ArchiveGaramondPro-BoldItalic;
+  font-size:33px;
+  z-index: 0;
+  /* position: absolute;  */
+  text-align: center;
+  color: #6b6e68;
+  /* top: 350px;  */
+  /* left: 0;  */
+  line-height: 20px;
+}
+.icons .enter{
+ font-family: ArchiveGaramondPro-BoldItalic;
+  font-size:53px;
+  z-index: 0;
+  position: absolute; 
+  text-align: center;
+  color: #6b6e68;
+  top: 800px; 
+  /* left: 0;  */
+  width: 100%;
+  line-height: 20px;
+}
+.icons-mobile .mobile-buffer{
+  display: flex;
+}
+.icons-mobile .tiles{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  /* top:1000px; */
+}
+.icons-mobile .ruler{
+height: 2px;
+width: 40%;
+background-color: #6b6e68;
+}
+.icons .tiles{
+  position: absolute;
+  display: flex;
+  top:900px;
+}
+
+
+.icons-mobile .tiles div{
+  text-align: center;
+  flex-direction: column;
+  margin:15px;
+}
+.icons .tiles div{
+  text-align: center;
+  margin:15px;
+}
+
+.tiles .title{
+  font-family: ArchiveGaramondPro-BoldItalic;
+  font-size:30px;
+  color: #6b6e68;
+}
+.tiles .bodyText{
+  font-family: Montserrat;
+  font-size:20px;
+  color: #6b6e68;
+}
+.tiles .ruler{
+  height:2px;
+  background-color: #6b6e68;
 }
