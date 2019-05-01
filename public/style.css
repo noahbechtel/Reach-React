@@ -162,6 +162,7 @@ background-color: #6b6e68;
 }
 .icons .tiles{
   position: absolute;
+  
   display: flex;
   top:900px;
 }
